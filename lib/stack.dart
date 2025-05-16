@@ -14,4 +14,6 @@ class Stack<E> {
   E pop() => _storage.removeLast();
 
   E get peek => _storage.last;
+
+  bool get isEmpty => _storage.isEmpty;
 }
