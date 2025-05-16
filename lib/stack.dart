@@ -16,4 +16,6 @@ class Stack<E> {
   E get peek => _storage.last;
 
   bool get isEmpty => _storage.isEmpty;
+
+  bool get isNotEmpty => !isEmpty;
 }
