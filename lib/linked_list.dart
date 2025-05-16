@@ -46,4 +46,14 @@ class LinkedList<E> {
     }
     return currentNode;
   }
+
+  Node<E> insertAfter(Node<E> node, E value) {
+    if (tail == node) {
+      append(value);
+      return tail!;
+    }
+
+    node.next = Node(value: value, next: node.next);
+    return node.next!;
+  }
 }
