@@ -12,4 +12,6 @@ class Stack<E> {
   void push(E element) => _storage.add(element);
 
   E pop() => _storage.removeLast();
+
+  E get peek => _storage.last;
 }
