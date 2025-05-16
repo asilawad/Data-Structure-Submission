@@ -9,3 +9,14 @@ class Node<T> {
     return '$value -> ${next.toString()}';
   }
 }
+
+class LinkedList<E> {
+  Node<E>? head;
+  Node<E>? tail;
+  bool get isEmpty => head == null;
+  @override
+  String toString() {
+    if (isEmpty) return 'Empty list';
+    return head.toString();
+  }
+}
