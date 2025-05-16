@@ -20,11 +20,13 @@ class LinkedList<E> {
     return head.toString();
   }
 
+//push
   void push(E value) {
     head = Node(value: value, next: head);
     tail ??= head;
   }
 
+//append
   void append(E value) {
     if (isEmpty) {
       push(value);
@@ -36,6 +38,7 @@ class LinkedList<E> {
     tail = tail!.next;
   }
 
+//nodeAt
   Node<E>? nodeAt(int index) {
     var currentNode = head;
     var currentIndex = 0;
@@ -47,6 +50,7 @@ class LinkedList<E> {
     return currentNode;
   }
 
+//insertAfter
   Node<E> insertAfter(Node<E> node, E value) {
     if (tail == node) {
       append(value);
