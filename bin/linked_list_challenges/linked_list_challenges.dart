@@ -32,4 +32,14 @@ void main(List<String> args) {
   list.reverse();
   print('Reversed linked list: $list');
 
+//remove all occurences
+  var list1 = LinkedList<int>();
+
+  list1.push(3);
+  list1.push(3);
+  list1.push(2);
+  list1.push(3);
+  list1.push(1);
+  list1.removeAll(3);
+  print(list1);
 }
