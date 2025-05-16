@@ -35,4 +35,15 @@ class LinkedList<E> {
 
     tail = tail!.next;
   }
+
+  Node<E>? nodeAt(int index) {
+    var currentNode = head;
+    var currentIndex = 0;
+
+    while (currentNode != null && currentIndex < index) {
+      currentNode = currentNode.next;
+      currentIndex += 1;
+    }
+    return currentNode;
+  }
 }
