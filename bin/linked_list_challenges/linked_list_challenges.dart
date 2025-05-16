@@ -24,4 +24,11 @@ void main(List<String> args) {
   print("finde middle node");
   final middleNode = getMiddle(list);
   print('Middle: ${middleNode?.value}');
+
+  
+  //reverse linked list
+  print("reverse linked list");
+  print('Original linked list: $list');
+  list.reverse();
+  print('Reversed linked list: $list');
 }
