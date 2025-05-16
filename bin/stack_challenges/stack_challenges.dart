@@ -1,6 +1,7 @@
 import 'package:data_structure_submission/stack.dart';
 
 import 'challenge1.dart';
+import 'challenge2.dart';
 
 void main(List<String> args) {
   final stack = Stack<int>();
@@ -12,6 +13,11 @@ void main(List<String> args) {
   print(stack);
   final element = stack.pop();
   print('Popped: $element');
+
   List list = [1, 2, 3, 4, 5];
   printInReverse(list);
+
+  print(checkParentheses("(welcome(to) Gaza (sky (geeks)))")
+      ? "Parentheses are ballanced"
+      : "Parentheses are not balanced");
 }
